@@ -14,6 +14,7 @@
 #include <QPolygon>
 #include <QLineEdit>
 #include <QMouseEvent>
+#include <cmath>
 
 class Graphics : public QObject
 {

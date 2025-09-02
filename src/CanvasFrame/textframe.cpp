@@ -4,6 +4,7 @@
 
 #include "textframe.h"
 
+#include <qcoreapplication.h>
 #include <QFont>
 #include <QFontMetrics>
 
@@ -87,7 +88,7 @@ void TextFrame::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
         emit clicked();
-        m_startPoint = event->globalPosition();
+        m_startPoint = event->globalPos();
         m_oldPosition = pos();
         m_isDragging = true;
         check();
@@ -98,7 +99,7 @@ void TextFrame::mousePressEvent(QMouseEvent* event)
 void TextFrame::mouseMoveEvent(QMouseEvent* event)
 {
     if (event->buttons() & Qt::LeftButton && m_isDragging) {
-        QPointF globalPos = event->globalPosition();
+        QPointF globalPos = event->globalPos();
         QPointF delta = globalPos - m_startPoint;
         move(pos() + delta.toPoint());
         m_startPoint = globalPos;

@@ -78,7 +78,7 @@ void GraphicsFrame::paintEvent(QPaintEvent *event){
 
 void GraphicsFrame::mousePressEvent(QMouseEvent *event){
     if (event->button() == Qt::LeftButton) {
-        m_startPoint = event->globalPosition();
+        m_startPoint = event->globalPos();
         if (m_isChecked) {
             m_startGeometry = geometry();
             m_oldGeometry = m_startGeometry;
@@ -110,7 +110,7 @@ void GraphicsFrame::mouseMoveEvent(QMouseEvent *event){
             }
         }
         if (event->buttons() == Qt::LeftButton) {
-            QPointF globalPos = event->globalPosition();
+            QPointF globalPos = event->globalPos();
             QPointF delta = globalPos - m_startPoint;
             if (m_isResizing) {
                 QRect newGeometry = m_startGeometry;
@@ -197,7 +197,7 @@ void GraphicsFrame::mouseReleaseEvent(QMouseEvent *event)
             m_isResizing = false;
             emit setGeometryFinished(m_oldGeometry, geometry());
         }else {
-            if (m_startPoint == event->globalPosition()) {
+            if (m_startPoint == event->globalPos()) {
                 emit clicked();
                 check();
                 m_resizeEdges = Qt::Edges();
@@ -209,7 +209,7 @@ void GraphicsFrame::mouseReleaseEvent(QMouseEvent *event)
     }
 }
 
-void GraphicsFrame::enterEvent(QEnterEvent*event)
+void GraphicsFrame::enterEvent(QEvent*event)
 {
     if (m_isChecked) {
         setCursor(Qt::SizeAllCursor);
