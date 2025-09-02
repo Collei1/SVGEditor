@@ -6,10 +6,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
-set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64/lib/cmake")
 
 # 查找 Qt 库
-find_package(Qt6 COMPONENTS Core Gui Widgets Svg REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Widgets Svg REQUIRED)
 
 # ==================== 文件分类 ====================
 # 源文件列表
