@@ -1,0 +1,54 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>resources/favicon.jpg</file>
+  </qresource>
+  <qresource prefix="cursor">
+    <file>resources/pen_cursor.svg</file>
+    <file>resources/zoom_cursor.svg</file>
+  </qresource>
+  <qresource prefix="hover">
+    <file>resources/righttriangle_hover.svg</file>
+    <file>resources/diamond_hover.svg</file>
+    <file>resources/pen_hover.svg</file>
+    <file>resources/arrow_hover.svg</file>
+    <file>resources/circle_hover.svg</file>
+    <file>resources/hexagon_hover.svg</file>
+    <file>resources/line_hover.svg</file>
+    <file>resources/pentagon_hover.svg</file>
+    <file>resources/pentagram_hover.svg</file>
+    <file>resources/rectangle_hover.svg</file>
+    <file>resources/text_hover.svg</file>
+    <file>resources/triangle_hover.svg</file>
+    <file>resources/zoom_hover.svg</file>
+  </qresource>
+  <qresource prefix="checked">
+    <file>resources/righttriangle_checked.svg</file>
+    <file>resources/diamond_checked.svg</file>
+    <file>resources/pen_checked.svg</file>
+    <file>resources/arrow_checked.svg</file>
+    <file>resources/circle_checked.svg</file>
+    <file>resources/hexagon_checked.svg</file>
+    <file>resources/line_checked.svg</file>
+    <file>resources/pentagon_checked.svg</file>
+    <file>resources/pentagram_checked.svg</file>
+    <file>resources/rectangle_checked.svg</file>
+    <file>resources/text_checked.svg</file>
+    <file>resources/triangle_checked.svg</file>
+    <file>resources/zoom_checked.svg</file>
+  </qresource>
+  <qresource prefix="normal">
+    <file>resources/righttriangle_normal.svg</file>
+    <file>resources/diamond_normal.svg</file>
+    <file>resources/arrow_normal.svg</file>
+    <file>resources/circle_normal.svg</file>
+    <file>resources/hexagon_normal.svg</file>
+    <file>resources/line_normal.svg</file>
+    <file>resources/pen_normal.svg</file>
+    <file>resources/pentagon_normal.svg</file>
+    <file>resources/pentagram_normal.svg</file>
+    <file>resources/rectangle_normal.svg</file>
+    <file>resources/text_normal.svg</file>
+    <file>resources/triangle_normal.svg</file>
+    <file>resources/zoom_normal.svg</file>
+  </qresource>
+</RCC>
